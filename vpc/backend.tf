@@ -14,9 +14,6 @@ resource "aws_s3_bucket" "cyberglitch-terraform-state" {
   object_lock_configuration {
     object_lock_enabled = "Enabled"
   }
-  lifecycle {
-    prevent_destroy = true
-  }
 
   tags = {
     Name = "S3 Remote Terraform State Store"
