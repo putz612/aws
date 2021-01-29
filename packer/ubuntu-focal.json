@@ -27,7 +27,7 @@
  "provisioners": [
     {
       "type": "shell",
-      "script": "baseInit.sh"
+      "script": "../packer/baseInit.sh"
     }
   ],
   "post-processors": [
